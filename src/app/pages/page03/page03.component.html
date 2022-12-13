@@ -1,0 +1,22 @@
+<div nz-row>
+    <div nz-col nzSpan="12">
+        <canvas width="640" height="480">
+
+        </canvas>
+    </div>
+    <div nz-col nzSpan="12">
+        <button nz-button nzType="primary" (click)="createConnection()">
+            Create Offer
+        </button>
+
+        <textarea nz-input [(ngModel)]="offerSdp" readonly rows="5">
+
+        </textarea>
+        <h1>
+            Answer
+        </h1>
+        <textarea nz-input [(ngModel)]="answerSdp" rows="5" (ngModelChange)="answerSdpChange($event)">
+
+        </textarea>
+    </div>
+</div>

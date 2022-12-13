@@ -1,0 +1,18 @@
+<div nz-row>
+
+    <div nz-col nzSpan="12">
+        <canvas width="640" height="480">
+
+        </canvas>
+
+    </div>
+    <div nz-col nzSpan="12">
+        <textarea nz-input [(ngModel)]="offerSdp" rows="5">
+        </textarea>
+        <button nz-button nzType="primary" [disabled]="!offerSdp" (click)="createAnswer()">
+            CreateAnswer
+        </button>
+        <textarea nz-input [(ngModel)]="answerSdp" rows="5" readonly>
+        </textarea>
+    </div>
+</div>
